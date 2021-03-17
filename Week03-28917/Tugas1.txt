@@ -1,0 +1,88 @@
+1. Jelaskan multidimensional arrays dan berikan contoh.  
+Multidimensional arrays adalah suatu variabel yang dapat menyimpan sekumpulan data yang memiliki tipe sama dan elemen yang akan diakses melalui banyak indeks atau subskrip.
+Dilihat dari namanya yaitu multidimensional, artinya array ini mempunyai dimensi yang lebih dari 1.
+
+Cara deklarasi multidimensional arrays mirip dengan deklarasi variabel lainnya, tetapi yang membuatnya berbeda adalah adanya tambahan "[]" setelah tipe variabel, dimana tanda "[]" menunjukkan jumlah dimensi pada tipe variabel tersebut
+- tipe_data[] = menunjukkan array biasa
+- tipe_data[][] = menunjukkan Multidimensional arrays (2 dimensi)
+- tipe_data[][][] = menunjukkan Multidimensional arrays (3 dimensi)
+- dan seterusnya.
+
+Salah satu contoh dari penggunaan multidimensional arrays ini adalah pada pembuatan game "Sudoku", dimana menggunakan array 2 dimensi.
+Contoh konkritnya:
+//Cara deklarasi
+int[][] sudoku = new int[3][3];
+
+//[3][3] menunjukkan kita membuat aray 2 dimensi yang ukuran masing-masingnya adalah 3
+Cara memanggilnya = sudoku[0][0] ~ sudoku[2][2]
+
+
+2. Sebutkan dan jelaskan 13 method-method string dalam Java
+- charAt()
+Mengembalikan karakter dari index / posisi yang dimasukkan, returnnya berupa char.
+- compareTo()	
+Membandingkan dua string secara leksikografis, returnnya berupa integer
+- concat() 
+Menambahkan string ke akhir String string lain atau dalam kata lain menggabungkannya, returnnya berupa string
+- contains() 
+Memeriksa apakah string berisi urutan karakter, returnnya berupa boolean yaitu true/false.
+- contentEquals() 
+Memeriksa apakah suatu string berisi urutan karakter yang sama persis dari boolean CharSequence atau StringBuffer yang ditentukan, returnnya berupa boolean yaitu true/false.
+- copyValueOf() 
+Mengembalikan String yang mewakili karakter dari karakter array, returnnya berupa string.
+- endsWith() 
+Memeriksa apakah string berakhir dengan karakter yang ditentukan, returnnya berupa boolean yaitu true/false.
+- equals() 
+Membandingkan dua string. Mengembalikan nilai true jika string sama, dan false jika tidak boolean
+- equalsIgnoreCase() 
+Membandingkan dua string, mengabaikan pertimbangan kasus atau case insensitive, dan returnya berupa boolean
+- hashCode() 
+Mengembalikan kode hash dari string, returnnya berupa string.
+- indexOf() 
+Mengembalikan posisi kemunculan karakter yang ditemukan pertama kali dalam string, returnnya berupa integer.
+- intern()
+Mengembalikan indeks dalam string ini dari kemunculan pertama karakter yang ditentukan, memulai pencarian pada indeks yang ditentukan, returnnya berupa string.
+- isEmpty() 
+Memeriksa apakah string kosong atau tidak, returnnya berupa boolean
+- lastIndexOf() 
+Mengembalikan posisi kemunculan karakter tertentu yang ditemukan terakhir dalam string
+- length()
+Mengembalikan panjang string yang ditentukan, returnnya berupa integer
+- matches() 
+Mencari string untuk kecocokan terhadap ekspresi reguler, dan mengembalikan kecocokan, returnnya berupa boolean
+- replace() 
+Mencari string untuk nilai yang ditentukan, dan mengembalikan string baru di mana nilai yang ditentukan diganti, returnnya berupa string
+- replaceFirst() 
+Mengganti kemunculan pertama substring yang cocok dengan ekspresi reguler yang diberikan dengan String pengganti yang diberikan
+- replaceAll() 
+Mengganti setiap substring dari string ini yang cocok dengan ekspresi reguler yang diberikan dengan String pengganti yang diberikan
+- split() 
+Memisahkan string menjadi array dari substring, returnnya berupa array
+- beginWith() 
+Memeriksa apakah string dimulai dengan karakter yang ditentukan, returnnya berupa boolean
+- subSequence() 
+Mengembalikan urutan karakter baru yang merupakan urutan dari urutan
+- substring() 
+Mengekstrak karakter dari string, mulai dari posisi awal yang ditentukan, dan melalui jumlah karakter yang ditentukan
+- toCharArray() 
+Mengubah string ini menjadi karakter array karakter baru []
+- toLowerCase() 
+Mengubah string ke huruf kecil
+- toString() 
+Mengembalikan nilai objek String
+- toUpperCase()
+Mengubah string menjadi huruf besar
+- trim()
+Menghapus spasi putih dari kedua ujung string
+- valueOf() 
+Mengembalikan nilai primitif dari objek String
+
+
+3. Sebutkan 2 keuntungan Immutability dalam Java
+Immutability ialah objek yang sekali di buat dan tidak bisa diubah, immutable pada objects memiliki sifat yang aman, sebab beberapa reference akan mengacu ke object yang sama dengan nilai yang tetap, tanpa ada kekhawatiran nilai akan berubah
+- Objek yang tidak berubah tetap berada dalam satu keadaan, keadaan di mana ia diciptakan. Oleh karena itu, objek yang tidak dapat diubah adalah thread-safe sehingga tidak ada masalah sinkronisasi. Mereka tidak dapat rusak oleh beberapa utas mengaksesnya secara bersamaan. Ini adalah pendekatan yang paling mudah untuk mencapai keselamatan benang.
+- Kelas yang tidak dapat berubah lebih mudah untuk dirancang, diimplementasikan, dan digunakan daripada kelas yang bisa berubah.
+Kekekalan memudahkan untuk memparalelkan program karena tidak ada konflik di antara objek.
+- Kekekalan memudahkan untuk memparalelkan program karena tidak ada konflik di antara objek.
+- Keadaan internal program akan konsisten bahkan jika kita memiliki pengecualian.
+- Referensi ke objek yang tidak dapat diubah dapat di-cache karena mereka tidak akan berubah. (misalnya: di Hashing menyediakan operasi cepat).

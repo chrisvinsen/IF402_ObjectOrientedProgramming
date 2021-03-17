@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="335.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PurchaseFormController">
+   <children>
+      <Label layoutX="83.0" layoutY="84.0" text="Item">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="141.0" text="Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cboItem" layoutX="224.0" layoutY="85.0" prefWidth="150.0" />
+      <TextField fx:id="txtAmount" layoutX="225.0" layoutY="142.0" />
+      <Button layoutX="78.0" layoutY="241.0" mnemonicParsing="false" onAction="#addSale" prefHeight="36.0" prefWidth="295.0" text="Buy Item">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

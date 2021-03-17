@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500" prefWidth="582.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TableView id="tableItem" fx:id="tableItem" layoutX="7.0" layoutY="51.0" prefHeight="300" prefWidth="575">
+        <columns>
+          <TableColumn id="colId" fx:id="colId" prefWidth="48.0" text="ID" />
+          <TableColumn id="colProductName" fx:id="colProductName" prefWidth="202.0" text="Product Name" />
+            <TableColumn id="colPrice" fx:id="colPrice" prefWidth="111.0" text="Price" />
+            <TableColumn id="colCategory" fx:id="colCategory" prefWidth="120.0" text="Category" />
+            <TableColumn id="colStock" fx:id="colStock" minWidth="0.0" prefWidth="87.0" text="Stock" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNewData" layoutX="477.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleBtnEntry" text="Entry New Data" />
+      <Button fx:id="btnDelete" layoutX="409.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleBtnDelete" text="Delete" />
+      <Button fx:id="btnSearch" layoutX="171.0" layoutY="11.0" mnemonicParsing="false" text="Search" />
+      <TextField id="txtKeyword" fx:id="searchField" layoutX="7.0" layoutY="11.0" promptText="Keyword..." />
+   </children>
+</AnchorPane>
